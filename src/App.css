@@ -1,38 +1,195 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(15, 15, 1);
+}
+
+.heading h1 {
+  color: white;
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  padding-top: 2rem;
+  text-align: center;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.7);
+}
+.searchBox {
+  text-align: center;
+  margin: 3rem;
+  font-size: large;
+}
+
+.search {
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 20px 0 0 20px;
+  padding: 0.3rem 1rem;
+  font-size: larger;
+}
+
+.searchBtn {
+  height: 50px;
+  width: 100px;
+  border: none;
+  outline: none;
+  font-size: larger;
+  text-align: center;
+  border-radius: 0 20px 20px 0;
+  color: white;
+  background-color: rgba(150, 255, 51, 0.7);
+}
+
+.random {
+  margin-left: 38%;
+}
+
+.randomBtn {
+  margin-left: 20px;
+  height: 50px;
+  width: 100px;
+  border: none;
+  outline: none;
+  font-size: larger;
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+  background-color: darkgreen;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  margin: 0.5rem;
+  background: linear-gradient(
+    to left,
+    rgba(204, 255, 51, 0.5),
+    rgba(204, 255, 51, 0.5)
+  );
+  border-radius: 8px;
+  box-shadow: 0 7px 12px rgba(204, 255, 51, 0.5);
+  overflow: auto;
+  position: relative;
+  box-sizing: border-box;
+  background-color: darkgreen;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card img {
+  width: 300px;
+  height: 350px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.hoverDisplay {
+  text-align: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+  /* padding-top: 40%;
+  padding-left: 5%; */
+}
+.hoverDisplay h2 {
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+.hoverDisplay h4 {
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.description {
+  background-color: blueviolet;
+}
+.heading {
+  text-align: center;
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  background: linear-gradient(
+    to left,
+    rgba(150, 255, 51, 0.7),
+    rgba(150, 255, 51, 0.7)
+  );
+  transition: 0.2s all;
+}
+
+.card:hover:before {
+  height: 100%;
+}
+
+.card:hover {
+  background: linear-gradient(
+    to left,
+    rgba(204, 255, 51, 0.5),
+    rgba(204, 255, 51, 0.5)
+  );
+}
+
+.card .recipe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  display: none;
+  transition: 0.2s all;
+}
+.card:hover .recipe {
+  display: block;
+}
+.card h1 {
+  font-size: 30px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.recipe img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.recipe p {
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.notFound {
+  font-size: 35px;
+  color: white;
+  font-weight: 900;
+}
+
+span {
+  color: whitesmoke;
+  margin: 4px;
+  padding: 2px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: small;
 }
