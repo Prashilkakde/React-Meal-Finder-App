@@ -7,8 +7,6 @@ const Meal = () => {
   const [search, setSearch] = useState("");
   const [meal, setMeal] = useState();
   const [mealvisible, setMealvisible] = useState([]);
-  // const [searchBtn, setSearchBtn] = useState(false);
-  // const [randomBtn, setRandomBtn] = useState(false);
 
   function mealData() {
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
@@ -45,9 +43,12 @@ const Meal = () => {
           <button
             className="searchBtn"
             onClick={() => {
-              mealData();
-              // setSearchBtn(true);
-              setSearch("");
+              if (search) {
+                setMealvisible([]);
+                mealData();
+
+                setSearch("");
+              }
             }}
           >
             Search
@@ -55,6 +56,8 @@ const Meal = () => {
           <button
             className="randomBtn"
             onClick={() => {
+              setMeal("");
+
               randomDish();
             }}
           >
@@ -64,14 +67,15 @@ const Meal = () => {
         <div className="container">
           {meal
             ? meal.map((response) => {
-                return <MealItem data={response} />;
+                return <MealItem data={response}/>;
               })
-            : ""}
+            : " "}
         </div>
 
         {mealvisible.map((list) => {
           return <Random data={list} />;
         })}
+
       </div>
     </div>
   );
