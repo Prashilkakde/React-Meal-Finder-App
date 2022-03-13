@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-Meal-Finder-App/static/css/main.7dd2f48d.css",
+    "main.js": "/React-Meal-Finder-App/static/js/main.6b493a72.js",
+    "index.html": "/React-Meal-Finder-App/index.html",
+    "main.7dd2f48d.css.map": "/React-Meal-Finder-App/static/css/main.7dd2f48d.css.map",
+    "main.6b493a72.js.map": "/React-Meal-Finder-App/static/js/main.6b493a72.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7dd2f48d.css",
+    "static/js/main.6b493a72.js"
+  ]
+}
