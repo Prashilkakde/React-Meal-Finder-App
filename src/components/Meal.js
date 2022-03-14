@@ -67,15 +67,13 @@ const Meal = () => {
         <div className="container">
           {meal
             ? meal.map((response) => {
-                return <MealItem data={response}/>;
+                return <MealItem data={response} />;
               })
             : " "}
+          {mealvisible.map((list) => {
+            return <Random data={list} />;
+          })}
         </div>
-
-        {mealvisible.map((list) => {
-          return <Random data={list} />;
-        })}
-
       </div>
     </div>
   );

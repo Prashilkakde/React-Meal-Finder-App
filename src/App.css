@@ -45,9 +45,9 @@ body {
   background-color: rgba(150, 255, 51, 0.7);
 }
 
-.random {
+/* .random {
   margin-left: 38%;
-}
+} */
 
 .randomBtn {
   margin-left: 20px;
@@ -166,12 +166,9 @@ span {
 }
 
 @media (max-width: 998px) {
-  .random {
-    margin-left: 33%;
-  }
+  
   .searchBox {
     margin: 3rem;
-    font-size: 1 rem;
   }
   .search {
     width: 250px;
@@ -191,26 +188,26 @@ span {
 }
 
 @media (max-width: 768px) {
-  .random {
-    margin-left: 18%;
-  }
+  
+
   .searchBox {
-    margin: 3rem;
-    font-size: 1 rem;
+    margin: 2.5rem;
   }
   .search {
-    width: 200px;
-    height: 40px;
-    font-size: 1 rem;
+    width: 145px;
+    height: 35px;
+    font-size: 0.8rem;
   }
   .searchBtn {
-    height: 40px;
-    width: 80px;
-    font-size: 1 rem;
+    height: 35px;
+    width: 60px;
+    font-size: 0.8rem;
   }
   .randomBtn {
-    height: 40px;
-    width: 80px;
-    font-size: 1 rem;
+    height: 35px;
+    width: 70px;
+    font-size: 0.8rem;
+    margin-left: 2px;
+
   }
 }
