@@ -45,9 +45,6 @@ body {
   background-color: rgba(150, 255, 51, 0.7);
 }
 
-/* .random {
-  margin-left: 38%;
-} */
 
 .randomBtn {
   margin-left: 20px;
@@ -81,6 +78,7 @@ body {
   box-sizing: border-box;
   background-color: darkgreen;
   text-align: center;
+  box-shadow: 0 7px 12px rgba(204, 255, 51, 0.5);
 
 }
 
@@ -150,12 +148,6 @@ body {
 }
 
 
-.notFound {
-  font-size: 35px;
-  color: white;
-  font-weight: 900;
-}
-
 span {
   color: whitesmoke;
   margin: 4px;
@@ -187,7 +179,7 @@ span {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   
 
   .searchBox {
